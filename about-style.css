@@ -1,0 +1,102 @@
+.about-card {
+    width: 100%;
+    max-width: 820px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 24px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-body {
+    flex: 1;
+    padding: 48px 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-tag {
+    display: inline-block;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #c0428a;
+    margin-bottom: 14px;
+}
+
+.about-body h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -.3px;
+}
+
+.about-body p {
+    color: rgba(255,255,255,.68);
+    font-size: .97rem;
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+.about-body p:last-child { margin-bottom: 0; }
+
+.about-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.feat-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.feat-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(192,66,138,.35), rgba(123,47,255,.35));
+    border: 1px solid rgba(255,255,255,.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.feat-text strong {
+    display: block;
+    font-size: .9rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.feat-text span {
+    font-size: .83rem;
+    color: rgba(255,255,255,.55);
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+    color: rgba(255,255,255,.6);
+    font-size: .9rem;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.back-btn:hover { color: #fff; }
+
+@media (max-width: 680px) {
+    .about-card { flex-direction: column; }
+    .about-body { padding: 28px 24px; }
+}
